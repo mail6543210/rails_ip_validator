@@ -30,7 +30,7 @@ class IpValidator < ActiveModel::EachValidator
       valid = true
 
       begin
-        ip = IPAddress.parse(value.to_s)
+        ip = IPAddress.parse(value)
 
         valid = false if forbidden? :netmask and value =~ /\//
         valid = false if forbidden? :a and ip.a?
