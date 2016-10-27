@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 # Add dependencies required to use your gem here.
 # Example:
-  gem 'activemodel', '>= 4.0.0'
-  gem 'ipaddress'
+gem 'activemodel', '>= 4.0.0'
+gem 'ipaddress'
 
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.

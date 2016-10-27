@@ -40,7 +40,7 @@ class IpValidator < ActiveModel::EachValidator
         valid = false if forbidden? :ipv4 and ip.class == IPAddress::IPv4
         valid = false if forbidden? :ipv6 and (ip.class == IPAddress::IPv6 or ip.class == IPAddress::IPv6::Mapped)
         if options[:custom].is_a? Proc
-          valid = false unless options[:custom].call(ip) 
+          valid = false unless options[:custom].call(ip)
         end
       rescue
         valid = false
