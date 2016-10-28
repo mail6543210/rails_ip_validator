@@ -51,7 +51,7 @@ describe IpValidator do
       it "should validate without errors" do
         (get_ipv4s + get_ipv6s).each do |ip|
           @object.ip = ip
-          @object.should be_valid
+          expect(@object).to be_valid
         end
       end
     end
@@ -67,7 +67,7 @@ describe IpValidator do
             3.3
         ].each do |ip|
           @object.ip = ip
-          @object.should_not be_valid
+          expect(@object).not_to be_valid
         end
       end
     end
@@ -89,7 +89,7 @@ describe IpValidator do
             '127.0.0.1/24'
         ].each do |ip|
           @object.ip = ip
-          @object.should be_valid
+          expect(@object).to be_valid
         end
       end
     end
@@ -102,7 +102,7 @@ describe IpValidator do
             '127.0.0.1/32'
         ].each do |ip|
           @object.ip = ip
-          @object.should_not be_valid
+          expect(@object).not_to be_valid
         end
       end
     end
@@ -124,7 +124,7 @@ describe IpValidator do
             '::ffff:10.0.0.1'
         ].each do |ip|
           @object.ip = ip
-          @object.should_not be_valid
+          expect(@object).not_to be_valid
         end
       end
     end
@@ -145,7 +145,7 @@ describe IpValidator do
             '::ffff:172.16.0.1'
         ].each do |ip|
           @object.ip = ip
-          @object.should_not be_valid
+          expect(@object).not_to be_valid
         end
       end
     end
@@ -166,7 +166,7 @@ describe IpValidator do
             '::ffff:192.168.0.1'
         ].each do |ip|
           @object.ip = ip
-          @object.should_not be_valid
+          expect(@object).not_to be_valid
         end
       end
     end
@@ -191,7 +191,7 @@ describe IpValidator do
             '::ffff:192.168.0.1'
         ].each do |ip|
           @object.ip = ip
-          @object.should_not be_valid
+          expect(@object).not_to be_valid
         end
       end
     end
@@ -209,7 +209,7 @@ describe IpValidator do
       it "should validate with errors" do
         get_ipv4s.each do |ip|
           @object.ip = ip
-          @object.should_not be_valid
+          expect(@object).not_to be_valid
         end
       end
     end
@@ -218,7 +218,7 @@ describe IpValidator do
       it "should validate without errors" do
         get_ipv6s.each do |ip|
           @object.ip = ip
-          @object.should be_valid
+          expect(@object).to be_valid
         end
       end
     end
@@ -236,7 +236,7 @@ describe IpValidator do
       it "should validate without errors" do
         get_ipv4s.each do |ip|
           @object.ip = ip
-          @object.should be_valid
+          expect(@object).to be_valid
         end
       end
     end
@@ -245,7 +245,7 @@ describe IpValidator do
       it "should validate with errors" do
         get_ipv6s.each do |ip|
           @object.ip = ip
-          @object.should_not be_valid
+          expect(@object).not_to be_valid
         end
       end
     end
@@ -266,7 +266,7 @@ describe IpValidator do
             '::ffff:192.168.0.1/12'
         ].each do |ip|
           @object.ip = ip
-          @object.should_not be_valid
+          expect(@object).not_to be_valid
         end
       end
     end
@@ -278,7 +278,7 @@ describe IpValidator do
             '::ffff:192.168.0.1'
         ].each do |ip|
           @object.ip = ip
-          @object.should be_valid
+          expect(@object).to be_valid
         end
       end
     end
