@@ -41,32 +41,32 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<activemodel>, [">= 4.0.0"])
-      s.add_runtime_dependency(%q<semver>, ["~> 1.0.1"])
       s.add_development_dependency(%q<rspec>, ["~> 2.8.0"])
       s.add_development_dependency(%q<yard>, ["~> 0.7"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0"])
       s.add_development_dependency(%q<juwelier>, ["~> 2.1"])
       s.add_development_dependency(%q<simplecov>, [">= 0.3.8"])
       s.add_development_dependency(%q<ipaddress>, [">= 0"])
+      s.add_development_dependency(%q<semver>, ["~> 1.0.1"])
     else
       s.add_dependency(%q<activemodel>, [">= 4.0.0"])
-      s.add_dependency(%q<semver>, ["~> 1.0.1"])
       s.add_dependency(%q<rspec>, ["~> 2.8.0"])
       s.add_dependency(%q<yard>, ["~> 0.7"])
       s.add_dependency(%q<bundler>, ["~> 1.0"])
       s.add_dependency(%q<juwelier>, ["~> 2.1"])
       s.add_dependency(%q<simplecov>, [">= 0.3.8"])
       s.add_dependency(%q<ipaddress>, [">= 0"])
+      s.add_dependency(%q<semver>, ["~> 1.0.1"])
     end
   else
     s.add_dependency(%q<activemodel>, [">= 4.0.0"])
-    s.add_dependency(%q<semver>, ["~> 1.0.1"])
     s.add_dependency(%q<rspec>, ["~> 2.8.0"])
     s.add_dependency(%q<yard>, ["~> 0.7"])
     s.add_dependency(%q<bundler>, ["~> 1.0"])
     s.add_dependency(%q<juwelier>, ["~> 2.1"])
     s.add_dependency(%q<simplecov>, [">= 0.3.8"])
     s.add_dependency(%q<ipaddress>, [">= 0"])
+    s.add_dependency(%q<semver>, ["~> 1.0.1"])
   end
 end
 
