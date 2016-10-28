@@ -9,8 +9,8 @@ rescue Bundler::BundlerError => e
 end
 require 'rake'
 
-require 'jeweler'
-Jeweler::Tasks.new do |gem|
+require 'juwelier'
+Juwelier::Tasks.new do |gem|
   gem.name = "rails_ip_validator"
   gem.homepage = "http://github.com/phatworx/rails_ip_validator"
   gem.license = "MIT"
@@ -19,7 +19,7 @@ Jeweler::Tasks.new do |gem|
   gem.email = "team@phatworx.de"
   gem.authors = ["Marco Scholl"]
 end
-Jeweler::RubygemsDotOrgTasks.new
+Juwelier::RubygemsDotOrgTasks.new
 
 require 'rspec/core'
 require 'rspec/core/rake_task'

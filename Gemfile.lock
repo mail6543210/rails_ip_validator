@@ -11,7 +11,7 @@ GEM
     git (1.2.5)
     i18n (0.5.0)
     ipaddress (0.7.0)
-    jeweler (1.5.2)
+    juwelier (1.5.2)
       bundler (~> 1.0.0)
       git (>= 1.2.5)
       rake
@@ -36,7 +36,7 @@ DEPENDENCIES
   activemodel (>= 3.0.0)
   bundler (~> 1.0.0)
   ipaddress
-  jeweler (~> 1.5.2)
+  juwelier (~> 1.5.2)
   rspec (~> 2.3.0)
   simplecov (>= 0.3.8)
   yard (~> 0.6.0)
