@@ -5,7 +5,7 @@ Breaking changes:
 
 * Drop `ruby<2`, `rails<4`
 
-* Delegate IP parsing to `ipaddress`
+* Delegate IP parsing to `ipaddress` (`cd076b4`)
 
 Upgrades: upgrade dependencies, **may** break compatibility
 
